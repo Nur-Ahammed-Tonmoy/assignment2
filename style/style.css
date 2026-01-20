@@ -20,6 +20,10 @@
     justify-content: space-around;
     align-items: center;
 }
+.hamburger{
+    display: none;
+}
+
 .navbar .logo{
     height: 32px;
     line-height: 32px;
@@ -49,6 +53,22 @@
     background-size:contain;
     background-position: center;
 }
+#hero .hero_container .mp .gb{
+    background-color: #00ff88;
+    color: black;
+    height: 38px;
+    width: 75px;
+    border-radius: 40px;
+    margin-left: 252px;
+}
+#hero .hero_container .mp .gb p{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 6px;
+}
+
 #hero .hero_container .mp img{
     margin: 0 auto;
     padding: 69px 75px 81px 75px ;
@@ -73,17 +93,23 @@
 }
 #hero .hero_container .mp_info .btn2{
     display: flex;
-    color: white;
-    padding: 24px 97px 0px 140px;
-    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
 }
+
 #hero .hero_container .mp_info .btn2 .ex_btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     border: 1px solid green;
     padding: 12.5px 16px;
-    font-size: 16;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
     color: green;
+    white-space: nowrap;
 }
 
 #section1 .s1_container{
@@ -318,5 +344,299 @@
     width: 20px;
 }
 
+@media (max-width: 576px){
 
+  .navbar{
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .navbar .list,
+  .navbar .btn{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .hamburger span{
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+    #hero .hero_container{
+    padding: 60px 16px;
+    background-position: center;
+    background-size: cover;    
+    background-repeat: no-repeat;
+  }
+
+  #hero .hero_container .mp{
+    height: 220px;             
+    width: 220px;
+    margin-bottom: 24px;
+  }
+
+  #hero .hero_container .mp .gb{
+    height: 30px;
+    width: 60px;
+    margin-left: auto;
+  }
+
+  #hero .hero_container .mp .gb p{
+    font-size: 13px;
+    padding-top: 6px;
+  }
+
+  #hero .hero_container .mp img{
+    width: 46.67px;                
+    height: auto;
+    padding: 0;
+    display: block;
+    margin: 50px auto 0 auto;
+  }
+
+  #hero .hero_container .mp_info h2{
+    width: 100%;
+    font-size: 36px;
+    height: auto;
+  }
+
+  #hero .hero_container .mp_info p{
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+    padding: 0 8px;
+  }
+
+  #hero .hero_container .mp_info .btn2{
+    flex-direction: row;         
+    gap: 12px;
+    flex-wrap: wrap;             
+    justify-content: center;
+  }
+
+  #hero .hero_container .mp_info .btn2 button{
+    width: auto;                 
+  }
+
+  #section1 .s1_container{
+    padding: 60px 16px;
+  }
+
+  #section1 .s1_container .atp h3{
+    font-size: 32px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  #section1 .s1_container .atp p,
+  #section1 .s1_container .atp .pp{
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+
+  #section1 .s1_container .atp hr{
+    margin: 32px 0;
+  }
+
+  #section1 .s1_container .uses{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 40px;
+  }
+
+  #section1 .s1_container .uses .g h3{
+    font-size: 36px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  #section1 .s1_container .uses .g p{
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  #section2 .s2_container{
+    padding: 60px 16px;
+  }
+
+  #section2 .s2_container .wct{
+    padding: 60px 16px 24px 16px;
+  }
+
+  #section2 .s2_container .wct h3{
+    white-space: nowrap;   
+    font-size: 32px;       
+    text-align: center;
+  }
+
+  #section2 .s2_container .box{
+    display: grid;
+    grid-template-columns: 1fr;   
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 0 16px 60px 16px;
+  }
+
+  #section2 .s2_container .box .bin,
+  #section2 .s2_container .box .box21,
+  #section2 .s2_container .box .box12,
+  #section2 .s2_container .box .box11{
+    padding: 24px;                
+    height: auto;
+    grid-column: span 1 !important;  
+    grid-row: span 1 !important;
+  }
+
+  #section2 .s2_container .box .bin .img,
+  #section2 .s2_container .box .bin .imgphn{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 12px;
+  }
+
+  #section2 .s2_container .box .bin h2{
+    font-size: 20px;
+    margin-bottom: 12px;
+    height: auto;
+  }
+
+  #section2 .s2_container .box .bin p{
+    font-size: 14px;
+    margin-bottom: 16px;
+    height: auto;
+  }
+
+  #section3 .s3_container {
+    padding-bottom: 60px;
+  }
+ 
+  #section3 .s3_container .fte h3 {
+    font-size: 32px;
+    padding: 80px 16px 24px 16px;
+    height: auto;
+  }
+
+  #section3 .s3_container .fte .card {
+    flex-direction: column;
+    padding: 0 16px 60px 16px;
+    gap: 16px;
+  }
+
+  #section3 .s3_container .fte .card .cinfo {
+    width: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  #section3 .s3_container .fte .card .cinfo h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  #section3 .s3_container .fte .card .cinfo p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  #section3 .s3_container .fte .card .time {
+    gap: 4px;
+  }
+
+  #section3 .s3_container .fte .card .time img {
+    height: 16px;
+    padding-top: 0;
+  }
+
+ 
+  #section3 .s3_container .ath h3 {
+    font-size: 32px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+
+  #section3 .s3_container .ath .bigcard {
+    flex-direction: column;          
+    align-items: center;              
+    padding: 24px;
+    gap: 16px;
+    border-radius: 20px;              
+    margin: 0 16px 16px 16px;         
+    text-align: center;               
+  }
+ 
+  #section3 .s3_container .ath .bigcard img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;               
+    margin-bottom: 12px;
+  } 
+  #section3 .s3_container .ath .bigcard .ak_info h2 {
+    font-size: 24px;
+    margin: 8px 0;
+  }
+ 
+  #section3 .s3_container .ath .bigcard .ak_info p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+   
+  #section3 .s3_container .ath .bigcard .ak_info .link {
+    display: flex;
+    justify-content: center;      
+    gap: 6px;
+    margin-top: auto;        
+  }
+
+  #section3 .s3_container .ath .bigcard .ak_info .link .b,
+  #section3 .s3_container .ath .bigcard .ak_info .link img {
+    height: 32px;
+    width: 32px;
+    padding: 6px;
+  }
+
+  #tw .twinfo {
+    padding: 60px 16px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+#tw .twinfo h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#tw .twinfo .link {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+#tw .twinfo .link .pd {
+    gap: 8px;
+    justify-content: center;
+}
+
+#tw .twinfo .link .pd img {
+    height: 24px;
+    width: 24px;
+}
+
+}
 
