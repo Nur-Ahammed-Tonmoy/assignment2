@@ -205,7 +205,118 @@
     grid-row: span 1;
 }
 
+#section3 .s3_container{
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+}
+#section3 .s3_container .fte h3{
+    text-align: center;
+    height: 58;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 120px 0px 40px 0px;
+}
+#section3 .s3_container .fte .card{
+    display: flex;
+    padding: 0px 200px 120px 200px;
+    gap: 30px;
+    
+}
+#section3 .s3_container .fte .card .cinfo{
+    border-radius: 25px;
+    background-color: #250D44;
+    padding: 24px;
+}
+#section3 .s3_container .fte .card .cinfo h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+   
+}
+#section3 .s3_container .fte .card .cinfo p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+#section3 .s3_container .fte .card .time{
+    display: flex;
+    gap: 6px;
+    color: #00ff88;
+}
+#section3 .s3_container .fte .card .time img{
+    height: 20px;
+    padding-top: 2px;
+}
+#section3 .s3_container .ath h3{
+    text-align: center;
+    height: 58;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0px 0px 40px 0px;
+}
+#section3 .s3_container .ath .bigcard{
+    display: flex;
+    background-color: #250D44;
+    padding: 40px;
+    border-radius: 15px;
+    gap: 24px;
+}
+#section3 .s3_container .ath .bigcard .ak_info h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+#section3 .s3_container .ath .bigcard .ak_info p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+#section3 .s3_container .ath .bigcard .ak_info .link{
+    display: flex;
+    gap: 8px;
 
+}
+#section3 .s3_container .ath .bigcard .ak_info .link .b{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
+
+#section3 .s3_container .ath .bigcard .ak_info .link img{
+    padding: 10px;
+}
+    
+#tw .twinfo{
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    background-image: url(../assets/footer-bg.png);
+    padding: 120px;
+}
+#tw .twinfo h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+#tw .twinfo .link{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+#tw .twinfo .link .pd{
+    display: flex;
+    gap: 8px;
+}
+#tw .twinfo .link .pd img{
+    height: 20px;
+    width: 20px;
+}
 
 
 
